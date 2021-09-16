@@ -24,7 +24,7 @@ namespace CoffeBrandSurvey
             /// For What  the score is higher (coffee/food)
             /// Score of customers recommendation.
             /// and the least and most popular products.
-            /// Do it by bool expression,
+            /// Do it by bool expression to compare the results
             bool higherCoffeeScore = QAResults.CoffeeTypesScore > QAResults.FoodScore;
             bool customerRecommendation = QAResults.WouldRecommendScore >= 8;
             bool leastGranolaMostCappucino =QAResults.LeastFavouriteProduct == "Granola" && QAResults.FavouriteProduct == "Cappucino";
