@@ -1,5 +1,6 @@
 ﻿using System;
 using static CoffeBrandSurvey.CoffeeSurveysResults;
+using static CoffeBrandSurvey.TaskReport;
 
 namespace CoffeBrandSurvey
 {
@@ -25,14 +26,25 @@ namespace CoffeBrandSurvey
             /// Score of customers recommendation.
             /// and the least and most popular products.
             /// Do it by bool expression to compare the results
+            /// ??
+            
+
             bool higherCoffeeScore = QAResults.CoffeeTypesScore > QAResults.FoodScore;
             bool customerRecommendation = QAResults.WouldRecommendScore >= 8;
             bool leastGranolaMostCappucino =QAResults.LeastFavouriteProduct == "Granola" && QAResults.FavouriteProduct == "Cappucino";
             Console.WriteLine($"Higher Coffee Score is: {higherCoffeeScore}");
             Console.WriteLine($"Customers recommendation : {customerRecommendation}");
             Console.WriteLine($"Least favourite Granola and favourite Cappucino : {leastGranolaMostCappucino}");
+            // next do some exercise using for and foreach loop  
 
+            {
+                TaskReport();
+            }
+        }
 
+        public static void TaskReport()
+        {
+            throw new NotImplementedException();
         }
     }
 }

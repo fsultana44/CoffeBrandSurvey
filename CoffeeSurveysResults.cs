@@ -23,6 +23,7 @@ namespace CoffeBrandSurvey
             //Survey count
             public static float SurveyNumber { get; set; } = 500;
             public static float RespondedNumber { get; set; } = 300;
+            public static float NonResponded { get; set; } = 200;
             public static float RewardNumber { get; set; } = 100;
             public static string Granola { get; private set; }
             public static string Cappucino { get; private set; }
